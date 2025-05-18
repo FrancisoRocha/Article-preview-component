@@ -1,0 +1,106 @@
+:root{
+
+    /* FUENTE */
+    --font: "Manrope", sans-serif;
+
+    /* COLORES */
+    --white: #ffffff;
+    --grey-900: #48556A;
+    --grey-500: #6E8098;
+    --grey-400: #9DAEC2;
+    --grey-200: #ECF2F8;
+
+
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /* 1rem = 10px */
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/*? UTILIDADES */
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--grey-900);
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 32.7rem;
+    height: 53.8rem;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+@media(min-width: 768px){
+    .container{
+        width: 60.8rem;
+        height: 34.6rem;
+    }
+}
+
+.drawers{
+    width: 100%;
+    height: 22rem;
+    object-fit: cover;
+}
+
+@media(min-width: 768px){
+    .drawers{
+        width: 40%;
+        height: 34.6rem;
+    }
+}
+
+.contenido{
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    width: 26.7rem;
+    height: 20rem;
+    background-color: rgb(211, 187, 233);
+    margin: 0 auto;
+}
+
+.title{
+    font-size: 2rem;
+    font-family: var(--font);
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: 0.25px;
+    text-align: left;
+    color: var(--grey-900);
+}
+
+.text{
+    font-family: var(--font);
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.12px;
+    color: var(--grey-500);
+}
